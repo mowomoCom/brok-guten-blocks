@@ -1,0 +1,90 @@
+/**
+ * Estilos que afectan tanto al editor como al view
+ */
+/**
+ * Estilos que afectan tanto al editor como al view
+ */
+@charset "UTF-8";
+/**
+ * Estilos que afectan a los componentes de mowomo que están en el inspector
+ */
+.mwm-panel {
+  position: relative;
+  border-top-color: #0b3d57 !important;
+  background-color: #f6f6f6; }
+  .mwm-panel .components-panel__body-title .components-button {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    padding: 1rem 1.7rem;
+    font-weight: bold;
+    background-color: #131e30;
+    color: #ffffff !important;
+    -webkit-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out; }
+    .mwm-panel .components-panel__body-title .components-button[aria-expanded="true"], .mwm-panel .components-panel__body-title .components-button:hover {
+      background-color: #232e40; }
+    .mwm-panel .components-panel__body-title .components-button:hover .mwm-icon {
+      color: #04c8d4; }
+    .mwm-panel .components-panel__body-title .components-button .components-panel__arrow {
+      color: #ffffff !important; }
+    .mwm-panel .components-panel__body-title .components-button .mwm-icon {
+      margin-right: 1.1rem;
+      width: 15px;
+      height: 15px;
+      -webkit-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out; }
+  .mwm-panel .mwm-form-input {
+    margin-top: 10px;
+    padding: 5px 0; }
+    .mwm-panel .mwm-form-input .components-toggle-control .components-form-toggle.is-checked .components-form-toggle__track {
+      background-color: #04c8d4; }
+    .mwm-panel .mwm-form-input label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #131e30; }
+    .mwm-panel .mwm-form-input input,
+    .mwm-panel .mwm-form-input select {
+      border-radius: 0;
+      height: 34.5px;
+      width: 100%;
+      border: 1.5px solid #131e30 !important;
+      border-radius: 5px;
+      -webkit-box-shadow: none !important;
+              box-shadow: none !important;
+      padding: 7px 10px;
+      -webkit-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out; }
+      .mwm-panel .mwm-form-input input:hover, .mwm-panel .mwm-form-input input:focus,
+      .mwm-panel .mwm-form-input select:hover,
+      .mwm-panel .mwm-form-input select:focus {
+        border-color: #04c8d4 !important; }
+    .mwm-panel .mwm-form-input button.mwm-btn {
+      width: 100%;
+      border: 1.5px solid #04c8d4;
+      border-radius: 5px;
+      padding: 8px 10px;
+      background-color: transparent;
+      font-weight: bold;
+      color: #04c8d4;
+      -webkit-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out; }
+      .mwm-panel .mwm-form-input button.mwm-btn:hover {
+        background-color: #04c8d4;
+        color: #ffffff; }
+  .mwm-panel .mwm-espacio {
+    height: 10px; }
+  .mwm-panel .mwm-logo {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    height: 30px;
+    width: 30px; }

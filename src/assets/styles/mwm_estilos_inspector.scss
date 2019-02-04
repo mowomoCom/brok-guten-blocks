@@ -1,0 +1,110 @@
+/**
+ * Estilos que afectan a los componentes de mowomo que están en el inspector
+ */
+
+$mwm-primary-color: #04c8d4;
+$mwm-secondary-color: #131e30;
+$mwm-secondary-color-2: #232e40;
+
+.mwm-panel {
+  position: relative;
+  border-top-color: #0b3d57 !important;
+  background-color: #f6f6f6;
+  .components-panel__body-title {
+    .components-button {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      padding: 1rem 1.7rem;
+      font-weight: bold;
+      background-color: $mwm-secondary-color;
+      color: #ffffff !important;
+      transition: all 200ms ease-in-out;
+      &[aria-expanded="true"],
+      &:hover {
+        background-color: $mwm-secondary-color-2;
+      }
+      &:hover {
+        .mwm-icon {
+          color: $mwm-primary-color;
+        }
+      }
+
+      .components-panel__arrow {
+        color: #ffffff !important;
+      }
+      .mwm-icon {
+        margin-right: 1.1rem;
+        width: 15px;
+        height: 15px;
+        transition: all 200ms ease-in-out;
+      }
+    }
+  }
+  .mwm-form-input {
+    margin-top: 10px;
+    padding: 5px 0;
+    .components-toggle-control {
+      .components-form-toggle.is-checked .components-form-toggle__track {
+        background-color: $mwm-primary-color;
+      }
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: $mwm-secondary-color;
+    }
+    input,
+    select {
+      border-radius: 0;
+      height: 34.5px;
+      width: 100%;
+      border: 1.5px solid $mwm-secondary-color !important;
+      border-radius: 5px;
+      box-shadow: none !important;
+      padding: 7px 10px;
+      transition: all 200ms ease-in-out;
+      &:hover,
+      &:focus {
+        border-color: $mwm-primary-color !important;
+      }
+    }
+    button.mwm-btn {
+      width: 100%;
+      border: 1.5px solid $mwm-primary-color;
+      border-radius: 5px;
+      padding: 8px 10px;
+      background-color: transparent;
+      font-weight: bold;
+      color: $mwm-primary-color;
+      transition: all 200ms ease-in-out;
+      &:hover {
+        background-color: $mwm-primary-color;
+        color: #ffffff;
+      }
+    }
+    // button.components-button {
+    //   border: 1.5px solid $mwm-primary-color;
+    //   border-radius: 5px;
+    //   background-color: transparent;
+    //   box-shadow: none;
+    //   color: $mwm-primary-color;
+    //   transition: all 200ms ease-in-out;
+    //   &:hover {
+    //     background-color: $mwm-primary-color;
+    //     color: #ffffff;
+    //   }
+    // }
+  }
+  .mwm-espacio {
+    height: 10px;
+  }
+  .mwm-logo {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    height: 30px;
+    width: 30px;
+  }
+}
