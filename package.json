@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "brok-guten-blocks es una herramienta de desarrollo de bloques para Gutenberg",
   "scripts": {
-    "start": "cross-env BABEL_ENV=default MODE=development webpack --watch",
+    "start": "cross-env MODE=development webpack --watch",
     "create": "node ./bin/create-block.js",
     "export": "node ./bin/export.js",
     "remove": "node ./bin/remove-block.js"
@@ -21,9 +21,11 @@
   "author": "mowomo",
   "license": "GPL",
   "devDependencies": {
-    "@babel/core": "^7.2.0",
-    "@babel/preset-env": "^7.2.0",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
+    "@wordpress/babel-plugin-makepot": "^2.1.3",
+    "@wordpress/babel-preset-default": "^3.0.2",
     "@wordpress/editor": "^9.0.5",
     "autoprefixer": "^9.4.2",
     "babel-loader": "^8.0.4",
