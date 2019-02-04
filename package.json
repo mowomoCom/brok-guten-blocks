@@ -1,7 +1,7 @@
 {
-  "name": "brock-guten-blocks",
+  "name": "brok-guten-blocks",
   "version": "1.0.0",
-  "description": "brock-guten-blocks es una herramienta de desarrollo de bloques para Gutenberg",
+  "description": "brok-guten-blocks es una herramienta de desarrollo de bloques para Gutenberg",
   "scripts": {
     "start": "cross-env BABEL_ENV=default MODE=development webpack --watch",
     "create": "node ./bin/create-block.js",
@@ -10,7 +10,7 @@
   },
   "keywords": [
     "bgb",
-    "brock guten blocks",
+    "brok guten blocks",
     "mwm",
     "mowomo",
     "WordPress",

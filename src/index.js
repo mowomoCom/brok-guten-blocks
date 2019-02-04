@@ -1,1 +1,1 @@
-import './bloque-de-texto/block';
+import "./bloque-de-texto/block";

@@ -5,13 +5,13 @@
     <br>
 </div>
 
-# 📦`brock-guten-blocks`
+# 📦`brok-guten-blocks`
 
-> `brock-guten-blocks` es una herramienta creada por `mowomo.com` para el desarrollo de bloques para Gutenberg, el nuevo editor de WordPress
+> `brok-guten-blocks` es una herramienta creada por `mowomo.com` para el desarrollo de bloques para Gutenberg, el nuevo editor de WordPress
 
 ## 🚀 Empezando
 
-Para empezar a trabajar con los bloques de `brock-guten-blocks` solo tendrás que clonar el proyecto donde quieras, ejecutar con `npm` el comando `npm run export` y copiar el contenido de la carpeta `exports` en la carpeta de `plugins` de tu WordPress. Luego, deberás de activar el plugin y ya podrás usarlo en tu editor de `Gutenberg`.
+Para empezar a trabajar con los bloques de `brok-guten-blocks` solo tendrás que clonar el proyecto donde quieras, ejecutar con `npm` el comando `npm run export` y copiar el contenido de la carpeta `exports` en la carpeta de `plugins` de tu WordPress. Luego, deberás de activar el plugin y ya podrás usarlo en tu editor de `Gutenberg`.
 
 ## 👨‍💻 Comandos
 

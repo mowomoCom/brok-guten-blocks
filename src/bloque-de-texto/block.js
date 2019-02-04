@@ -59,14 +59,14 @@ var GLOBALS = {};
 
 /**
  * Nombre: Bloque de texto
- * Slug: brock-guten-blocks
+ * Slug: brok-guten-blocks
  * Descripción: Bloque que muestra un texto
  */
-registerBlockType("brock-guten-blocks/bloque-de-texto", {
+registerBlockType("brok-guten-blocks/bloque-de-texto", {
   title: "Bloque de texto",
   icon: "editor-textcolor",
   attributes: attrs,
-  category: "brock-guten-blocks",
+  category: "brok-guten-blocks",
   edit: Editor,
   save(props) {
     /**

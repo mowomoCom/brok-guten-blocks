@@ -45,14 +45,14 @@ var GLOBALS = {};
 
 /**
  * Nombre: nombre-del-bloque
- * Slug: brock-guten-blocks
+ * Slug: brok-guten-blocks
  * Descripción: Descripcion del bloque
  */
-registerBlockType("brock-guten-blocks/nombre-del-bloque", {
+registerBlockType("brok-guten-blocks/nombre-del-bloque", {
   title: "nombre-del-bloque",
   icon: "editor-textcolor",
   attributes: attrs,
-  category: "brock-guten-blocks",
+  category: "brok-guten-blocks",
   edit: Editor,
   save(props) {
     /**

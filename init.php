@@ -1,27 +1,27 @@
 <?php
 /**
- * Plugin Name: Brock Guten Blocks
- * Description: brock-guten-blocks es una herramienta de desarrollo de bloques para Gutenberg
+ * Plugin Name: Brok Guten Blocks
+ * Description: brok-guten-blocks es una herramienta de desarrollo de bloques para Gutenberg
  * Version: 1.0.0
  * Author: mowomo
  * Url: mowomo.com
- * @package brock-guten-blocks
+ * @package brok-guten-blocks
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class brock_guten_blocks {
+class brok_guten_blocks {
     private static $instance;
     private $slug;
     private $blockNames;
     private $wordpressPackages;
     private $version;
 
-    public static function brock_guten_blocks__init() {
+    public static function brok_guten_blocks__init() {
         if (!self::$instance) {
-            self::$instance = new brock_guten_blocks();
+            self::$instance = new brok_guten_blocks();
         } else {
             echo 'There is already a created instance of this class.';
         }
@@ -29,8 +29,8 @@ class brock_guten_blocks {
 
     private function __construct() {
         // CONFIGURAR ESTAS VARIABLES -----------------------------------------------
-        $this->slug              = 'brock-guten-blocks';
-        $this->blockNames        = array('bloque-de-texto');//Array
+        $this->slug              = 'brok-guten-blocks';
+        $this->blockNames        = array('bloque-de-texto','bloque-hola');//Array
         $this->wordpressPackages = array('wp-blocks', 'wp-element', 'wp-editor', 'wp-i18n', 'wp-components');
         $this->version           = '1.0.0';
         //---------------------------------------------------------------------------
@@ -41,8 +41,8 @@ class brock_guten_blocks {
                     $categories,
                     array(
                         array(
-                            'slug' => 'brock-guten-blocks',
-                            'title' => __( 'brock-guten-blocks', 'brock-guten-blocks' ),
+                            'slug' => 'brok-guten-blocks',
+                            'title' => __( 'brok-guten-blocks', 'brok-guten-blocks' ),
                         ),
                     )
                 );
@@ -52,10 +52,10 @@ class brock_guten_blocks {
             }
 
         }, 10, 2 );
-        add_action( 'init', array( $this, 'brock_guten_blocks_register_dynamic_editor_assets' ) );
+        add_action( 'init', array( $this, 'brok_guten_blocks_register_dynamic_editor_assets' ) );
     }
 
-    public function brock_guten_blocks_register_dynamic_editor_assets() {
+    public function brok_guten_blocks_register_dynamic_editor_assets() {
         $slug              = $this->slug;
         $blockNames        = $this->blockNames;
         $wordpressPackages = $this->wordpressPackages;
@@ -92,4 +92,4 @@ class brock_guten_blocks {
     }
 }
 
-brock_guten_blocks::brock_guten_blocks__init();
+brok_guten_blocks::brok_guten_blocks__init();
