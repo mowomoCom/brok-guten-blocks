@@ -30,7 +30,7 @@ class brok_guten_blocks {
     private function __construct() {
         // CONFIGURAR ESTAS VARIABLES -----------------------------------------------
         $this->slug              = 'brok-guten-blocks';
-        $this->blockNames        = array('bloque-de-texto','bloque-hola');//Array
+        $this->blockNames        = array('bloque-de-texto');//Array
         $this->wordpressPackages = array('wp-blocks', 'wp-element', 'wp-editor', 'wp-i18n', 'wp-components');
         $this->version           = '1.0.0';
         //---------------------------------------------------------------------------

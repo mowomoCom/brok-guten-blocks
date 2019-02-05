@@ -5,7 +5,7 @@
 // Dependencias externas
 const fs = require("fs");
 const path = require("path");
-var rimraf = require("rimraf");
+const rimraf = require("rimraf");
 
 // Funcionalidades
 module.exports = {

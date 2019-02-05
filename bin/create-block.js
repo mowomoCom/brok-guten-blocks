@@ -4,7 +4,7 @@
 const fs = require("fs");
 
 // Dependencias internas
-const functions = require("./../utils/functions");
+const functions = require("./lib/functions");
 
 // CONFIGURACIÓN DEL SCRIPT
 const ficheroPHP = "init.php";

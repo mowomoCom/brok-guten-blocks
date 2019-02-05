@@ -2,9 +2,10 @@
 
 // External dependencies
 const fs = require("fs");
+const ncp = require("ncp").ncp;
 
 // Internal dependencies
-const functions = require("./../utils/functions");
+const functions = require("./lib/functions");
 
 // Run all the code
 const run = async () => {
@@ -27,21 +28,13 @@ const run = async () => {
       fs.mkdirSync("./exports/plugin-" + blockName + "/build/");
     }
 
-    functions.copyFile(
-      "./build/block.build.js",
-      "./exports/plugin-" + blockName + "/build/",
-      function() {}
-    );
-    functions.copyFile(
-      "./build/block.editor.build.css",
-      "./exports/plugin-" + blockName + "/build/",
-      function() {}
-    );
-    functions.copyFile(
-      "./build/block.style.build.css",
-      "./exports/plugin-" + blockName + "/build/",
-      function() {}
-    );
+    ncp("./build/", "./exports/plugin-" + blockName + "/build/", function(err) {
+      if (err) {
+        return console.error(err);
+      } else {
+        console.log("hecho");
+      }
+    });
     functions.copyFile(
       "./init.php",
       "./exports/plugin-" + blockName + "/",
@@ -57,15 +50,6 @@ const run = async () => {
     );
 
     console.log("> Exportación lista");
-
-    console.log("> Arbol de exportación:\n");
-    console.log("+ ./exports/");
-    console.log("|---+ /plugin-" + blockName + "/");
-    console.log("|---|---+ /build/");
-    console.log("|---|---|---> block.build.js");
-    console.log("|---|---|---> block.editor.build.css");
-    console.log("|---|---|---> block.style.build.css");
-    console.log("|---|---> generador-" + blockName + ".php");
 
     console.log("");
   });
