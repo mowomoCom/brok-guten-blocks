@@ -4,9 +4,9 @@
   "description": "brok-guten-blocks es una herramienta de desarrollo de bloques para Gutenberg",
   "scripts": {
     "start": "cross-env MODE=development webpack --watch",
-    "create": "node ./bin/create-block.js",
-    "export": "node ./bin/export.js",
-    "remove": "node ./bin/remove-block.js"
+    "crear": "node ./bin/create-block.js",
+    "exportar": "node ./bin/export.js",
+    "borrar": "node ./bin/remove-block.js"
   },
   "keywords": [
     "bgb",

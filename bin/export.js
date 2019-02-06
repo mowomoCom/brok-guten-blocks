@@ -31,8 +31,6 @@ const run = async () => {
     ncp("./build/", "./exports/plugin-" + blockName + "/build/", function(err) {
       if (err) {
         return console.error(err);
-      } else {
-        console.log("hecho");
       }
     });
     functions.copyFile(
@@ -49,9 +47,7 @@ const run = async () => {
       }
     );
 
-    console.log("> Exportación lista");
-
-    console.log("");
+    console.log("> Exportación lista\n");
   });
 };
 
