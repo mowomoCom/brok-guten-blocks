@@ -49,7 +49,12 @@ Este paquete contiene algunos `comandos de consola` personalizados creados para 
 - Usado para borrar un bloque con el nombre indicado.
 - El bloque borrado será correctamente desconfigurado del entorno del plugin.
 
-## 🥏 Dependencias mínimas
+🤙 `npm run exportar`
+
+- Usado para configurar un plugin perfectamente funcional en la carpeta `exports`.
+- Para usarlo como plugin solo tendrás que pasarlo a la carpeta plugins de la instalación WordPress que quieras y activarlo.
+
+## 📚 Dependencias mínimas
 
 Este kit de desarrollo se basa en ciertas dependencias que, de no estar incluidas, no funcionaría correctamente. Te hacemos un resumen de todas ellas:
 
