@@ -1,3 +1,6 @@
+/**
+ * Estilos que afectan tanto al editor como al view
+ */
 @charset "UTF-8";
 /**
  * Estilos que afectan a los componentes de mowomo que están en el inspector
@@ -70,6 +73,3 @@
     bottom: 5px;
     height: 30px;
     width: 30px; }
-/**
- * Estilos que afectan tanto al editor como al view
- */

@@ -49,8 +49,10 @@ var GLOBALS = {};
  * Descripción: Descripcion del bloque
  */
 registerBlockType("brok-guten-blocks/nombre-del-bloque", {
-  title: "nombre-del-bloque",
+  title: __("nombre-del-bloque"),
   icon: "editor-textcolor",
+  description: __("Descripción del bloque modelo"),
+  keywords: [__("bgb"), __("bloque"), __("modelo")],
   attributes: attrs,
   category: "brok-guten-blocks",
   edit: Editor,
