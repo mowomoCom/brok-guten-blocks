@@ -63,8 +63,10 @@ var GLOBALS = {};
  * Descripción: Bloque que muestra un texto
  */
 registerBlockType("brok-guten-blocks/bloque-de-texto", {
-  title: "Bloque de texto",
+  title: __("Bloque de texto"),
   icon: "editor-textcolor",
+  description: __("Bloque de prueba"),
+  keywords: [__("bgb"), __("brok guten block"), __("texto")],
   attributes: attrs,
   category: "brok-guten-blocks",
   edit: Editor,

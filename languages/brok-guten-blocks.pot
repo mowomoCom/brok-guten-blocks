@@ -3,6 +3,26 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "X-Generator: babel-plugin-makepot\n"
 
+#: src/bloque-de-texto/block.js:66
+msgid "Bloque de texto"
+msgstr ""
+
+#: src/bloque-de-texto/block.js:68
+msgid "Bloque de prueba"
+msgstr ""
+
+#: src/bloque-de-texto/block.js:69
+msgid "bgb"
+msgstr ""
+
+#: src/bloque-de-texto/block.js:69
+msgid "brok guten block"
+msgstr ""
+
+#: src/bloque-de-texto/block.js:69
+msgid "texto"
+msgstr ""
+
 #: src/bloque-de-texto/components/controles.js:56
 msgid "Texto subrayado"
 msgstr ""

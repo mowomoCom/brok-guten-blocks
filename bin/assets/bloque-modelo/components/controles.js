@@ -37,7 +37,7 @@ class Controles extends Component {
     /**
      * Variables que se usan dentro del componente
      */
-    const { attributes, isSelected } = this.props;
+    const { attributes, isSelected, setAttributes } = this.props;
 
     /**
      * Funcionalidades

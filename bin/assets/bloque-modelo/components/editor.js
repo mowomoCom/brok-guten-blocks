@@ -57,7 +57,7 @@ class Editor extends Component {
     /**
      * Variables
      */
-    const { attributes } = this.props;
+    const { attributes, setAttributes } = this.props;
     const {} = attributes;
 
     const estilos = {};

@@ -70,13 +70,13 @@ class brok_guten_blocks {
         wp_register_style(
             $slug .'/editor-style',
             plugins_url('./build/block.editor.build.css', __FILE__),
-            array( 'wp-edit-blocks' ),
+            array(),
             filemtime( plugin_dir_path( __FILE__ ) . './build/block.editor.build.css' )
         );
         wp_register_style(
             $slug .'/style',
             plugins_url('./build/block.style.build.css', __FILE__),
-            array( 'wp-edit-blocks' ),
+            array(),
             filemtime( plugin_dir_path( __FILE__ ) . './build/block.style.build.css' )
         );
 
