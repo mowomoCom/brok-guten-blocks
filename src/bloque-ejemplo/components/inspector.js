@@ -11,15 +11,15 @@ import mwmIconos from "../../assets/mwm_iconos";
  */
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
-const { BlockControls } = wp.editor;
-const { Toolbar } = wp.components;
+const { InspectorControls, ColorPalette, URLInput } = wp.editor;
+const { PanelBody, SelectControl, ToggleControl } = wp.components;
 
 /**
- * Clase que define al componente "Controles"
+ * Clase que define al componente "Inspector"
  */
-class Controles extends Component {
+class Inspector extends Component {
   /**
-   * Constructor de la clase "Controles"
+   * Constructor de la clase "Inspector"
    * @param {*} props Propiedades provenientes de la sección "edit" del bloque
    */
   constructor(props) {
@@ -29,9 +29,6 @@ class Controles extends Component {
   /**
    * Funcionalidades de actualización de los atributos
    */
-  onClickSubrayadoTexto(valor) {
-    this.props.setAttributes({ subrayadoTexto: valor });
-  }
 
   /**
    * Ejecución de este componente
@@ -41,23 +38,11 @@ class Controles extends Component {
      * Variables que se usan dentro del componente
      */
     const { attributes, isSelected, setAttributes } = this.props;
-    const { subrayadoTexto } = attributes;
+    const {} = attributes;
 
     /**
      * Funcionalidades
      */
-
-    /**
-     * Todos los controles propios con sus funcionalidades
-     */
-    const customControls = [
-      {
-        icon: "admin-customizer",
-        title: __("Texto subrayado"),
-        onClick: () => this.onClickSubrayadoTexto(!subrayadoTexto),
-        isActive: subrayadoTexto === true
-      }
-    ];
 
     /**
      * Retorno del componente a la sección de "edit"
@@ -65,9 +50,7 @@ class Controles extends Component {
     return (
       isSelected && (
         <Fragment>
-          <BlockControls>
-            <Toolbar controls={customControls} />
-          </BlockControls>
+          <InspectorControls>{/* Contenido del inspector */}</InspectorControls>
         </Fragment>
       )
     );
@@ -77,4 +60,4 @@ class Controles extends Component {
 /**
  * Como no exportemos el componente no funca
  */
-export default Controles;
+export default Inspector;

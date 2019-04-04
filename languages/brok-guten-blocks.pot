@@ -3,34 +3,22 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "X-Generator: babel-plugin-makepot\n"
 
-#: src/bloque-de-texto/block.js:66
-msgid "Bloque de texto"
+#: src/bloque-media-texto/block.js:52
+msgid "bloque-media-texto"
 msgstr ""
 
-#: src/bloque-de-texto/block.js:68
-msgid "Bloque de prueba"
+#: src/bloque-media-texto/block.js:54
+msgid "Descripción del bloque modelo"
 msgstr ""
 
-#: src/bloque-de-texto/block.js:69
+#: src/bloque-media-texto/block.js:55
 msgid "bgb"
 msgstr ""
 
-#: src/bloque-de-texto/block.js:69
-msgid "brok guten block"
+#: src/bloque-media-texto/block.js:55
+msgid "bloque"
 msgstr ""
 
-#: src/bloque-de-texto/block.js:69
-msgid "texto"
-msgstr ""
-
-#: src/bloque-de-texto/components/controles.js:56
-msgid "Texto subrayado"
-msgstr ""
-
-#: src/bloque-de-texto/components/editor.js:95
-msgid "Introduce un texto"
-msgstr ""
-
-#: src/bloque-de-texto/components/inspector.js:59
-msgid "Color del texto"
+#: src/bloque-media-texto/block.js:55
+msgid "modelo"
 msgstr ""

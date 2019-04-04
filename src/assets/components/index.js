@@ -1,5 +1,7 @@
 /**
- * Archivo iniciador de todos los componentes de mowomo
+ * Archivo iniciador de todos los componentes de Brok Guten Blocks
  */
 
-module.exports = {};
+import BgbMediaUpload from "./BgbMediaUpload";
+
+export { BgbMediaUpload };

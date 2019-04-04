@@ -50,11 +50,6 @@ class Editor extends Component {
    * Funcionalidades de actualización de los atributos
    */
 
-  // Actualización del valor del texto
-  onChangeTexto(valor) {
-    this.props.setAttributes({ texto: valor });
-  }
-
   /**
    * Funcionalidad devuelve el contenido del editor
    */
@@ -62,16 +57,10 @@ class Editor extends Component {
     /**
      * Variables
      */
-    const { attributes } = this.props;
-    const { texto, colorTexto, subrayadoTexto } = attributes;
+    const { attributes, setAttributes } = this.props;
+    const {} = attributes;
 
-    const estilos = {
-      texto: {
-        color: colorTexto,
-        backgroundColor: subrayadoTexto ? "#ffff80" : null,
-        display: subrayadoTexto ? "inline-block" : "block"
-      }
-    };
+    const estilos = {};
 
     /**
      * Funcionalidades
@@ -85,15 +74,8 @@ class Editor extends Component {
       <Fragment>
         <Controles {...this.props} />
         <Inspector {...this.props} />
-        <div className={"bgb bgb-bloque-de-texto"}>
-          <RichText
-            tagName={"p"}
-            className={"texto"}
-            style={estilos.texto}
-            value={texto}
-            onChange={valor => this.onChangeTexto(valor)}
-            placeholder={__("Introduce un texto")}
-          />
+        <div className={"bgb bgb-bloque-ejemplo"}>
+          <p>Texto de muestra del bloque "bloque-ejemplo"</p>
         </div>
       </Fragment>
     );

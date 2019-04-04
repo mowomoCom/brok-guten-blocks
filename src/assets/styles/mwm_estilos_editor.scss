@@ -1,3 +1,64 @@
 /**
- * Estilos que afectan a los componentes de mowomo que están en el editor
+ * Estilos que afectan a los componentes de Brok Guten Blocks que están en el editor
  */
+
+.bgb-media-upload {
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    min-height: 200px;
+    width: 100%;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #00cad5, #ff00eb);
+    .bgb-media-upload-icon {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        color: #fff;
+        svg {
+            height: 20px;
+            width: auto;
+        }
+        span {
+            margin-left: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+    .bgb-media-upload-text {
+        margin: 0;
+        margin-bottom: 1rem;
+        color: #fff;
+    }
+    .bgb-media-upload-buttons {
+        display: flex;
+        justify-content: center;
+        .bgb-media-upload-button {
+            margin-bottom: 1rem;
+            border: 2px solid #fff;
+            border-radius: 7px;
+            padding: 3px 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: transparent;
+            transition: all 200ms ease-in-out;
+            cursor: pointer;
+            &:hover {
+                color: #04c8d4;
+                background-color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -30,27 +30,21 @@ class brok_guten_blocks {
     private function __construct() {
         // CONFIGURAR ESTAS VARIABLES -----------------------------------------------
         $this->slug              = 'brok-guten-blocks';
-        $this->blockNames        = array('bloque-de-texto');//Array
+        $this->blockNames        = array('bloque-ejemplo');//Array
         $this->wordpressPackages = array('wp-blocks', 'wp-element', 'wp-editor', 'wp-i18n', 'wp-components');
         $this->version           = '1.0.0';
         //---------------------------------------------------------------------------
 
         add_filter( 'block_categories', function( $categories, $post ) {
-            if ( $post->post_type === 'post' || $post->post_type === 'page' ) {
-                return array_merge(
-                    $categories,
+            return array_merge(
+                $categories,
+                array(
                     array(
-                        array(
-                            'slug' => 'brok-guten-blocks',
-                            'title' => __( 'brok-guten-blocks', 'brok-guten-blocks' ),
-                        ),
-                    )
-                );
-
-            } else {
-                return $categories;
-            }
-
+                        'slug' => 'brok-guten-blocks',
+                        'title' => __( 'brok-guten-blocks', 'brok-guten-blocks' ),
+                    ),
+                )
+            );
         }, 10, 2 );
         add_action( 'init', array( $this, 'brok_guten_blocks_register_dynamic_editor_assets' ) );
     }

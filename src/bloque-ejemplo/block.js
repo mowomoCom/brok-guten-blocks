@@ -35,21 +35,7 @@ const { RichText, MediaUpload } = wp.editor;
  * Atributos del bloque
  */
 const attrs = {
-  mwmAtributos,
-  texto: {
-    type: "string",
-    source: "html",
-    selector: ".texto",
-    default: "Texto del bloque"
-  },
-  colorTexto: {
-    type: "string",
-    default: "#181818"
-  },
-  subrayadoTexto: {
-    type: "boolean",
-    default: false
-  }
+  mwmAtributos
 };
 
 /**
@@ -58,15 +44,15 @@ const attrs = {
 var GLOBALS = {};
 
 /**
- * Nombre: Bloque de texto
+ * Nombre: bloque-ejemplo
  * Slug: brok-guten-blocks
- * Descripción: Bloque que muestra un texto
+ * Descripción: Descripcion del bloque
  */
-registerBlockType("brok-guten-blocks/bloque-de-texto", {
-  title: __("Bloque de texto"),
+registerBlockType("brok-guten-blocks/bloque-ejemplo", {
+  title: __("bloque-ejemplo"),
   icon: "editor-textcolor",
-  description: __("Bloque de prueba"),
-  keywords: [__("bgb"), __("brok guten block"), __("texto")],
+  description: __("Descripción del bloque modelo"),
+  keywords: [__("bgb"), __("bloque"), __("modelo")],
   attributes: attrs,
   category: "brok-guten-blocks",
   edit: Editor,
@@ -75,15 +61,9 @@ registerBlockType("brok-guten-blocks/bloque-de-texto", {
      * Variables
      */
     const { attributes } = props;
-    const { texto, colorTexto, subrayadoTexto } = attributes;
+    const {} = attributes;
 
-    const estilos = {
-      texto: {
-        color: colorTexto,
-        backgroundColor: subrayadoTexto ? "#ffff80" : null,
-        display: subrayadoTexto ? "inline-block" : "block"
-      }
-    };
+    const estilos = {};
 
     /**
      * Funcionalidades
@@ -94,13 +74,8 @@ registerBlockType("brok-guten-blocks/bloque-de-texto", {
      */
     return (
       <Fragment>
-        <div className={"bgb bgb-bloque-de-texto"}>
-          <RichText.Content
-            tagName={"p"}
-            className={"texto"}
-            style={estilos.texto}
-            value={texto}
-          />
+        <div className={"bgb bgb-bloque-ejemplo"}>
+          <p>Texto de muestra del bloque "bloque-ejemplo"</p>
         </div>
       </Fragment>
     );
