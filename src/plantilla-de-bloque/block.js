@@ -44,12 +44,12 @@ const attrs = {
 var GLOBALS = {};
 
 /**
- * Nombre: bloque-ejemplo
+ * Nombre: plantilla-de-bloque
  * Slug: brok-guten-blocks
  * Descripción: Descripcion del bloque
  */
-registerBlockType("brok-guten-blocks/bloque-ejemplo", {
-  title: __("bloque-ejemplo"),
+registerBlockType("brok-guten-blocks/plantilla-de-bloque", {
+  title: __("plantilla-de-bloque"),
   icon: "editor-textcolor",
   description: __("Descripción del bloque modelo"),
   keywords: [__("bgb"), __("bloque"), __("modelo")],
@@ -74,8 +74,8 @@ registerBlockType("brok-guten-blocks/bloque-ejemplo", {
      */
     return (
       <Fragment>
-        <div className={"bgb bgb-bloque-ejemplo"}>
-          <p>Texto de muestra del bloque "bloque-ejemplo"</p>
+        <div className={"bgb bgb-plantilla-de-bloque"}>
+          <p>Texto de muestra del bloque "plantilla-de-bloque"</p>
         </div>
       </Fragment>
     );

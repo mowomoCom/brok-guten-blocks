@@ -74,8 +74,8 @@ class Editor extends Component {
       <Fragment>
         <Controles {...this.props} />
         <Inspector {...this.props} />
-        <div className={"bgb bgb-bloque-ejemplo"}>
-          <p>Texto de muestra del bloque "bloque-ejemplo"</p>
+        <div className={"bgb bgb-plantilla-de-bloque"}>
+          <p>Texto de muestra del bloque "plantilla-de-bloque"</p>
         </div>
       </Fragment>
     );
