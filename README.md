@@ -7,98 +7,92 @@
 
 # 📦 `brok-guten-blocks`
 
-> `brok-guten-blocks` es un kit de desarrollo creado por `mowomo.com` con ❤️ para el desarrollo de bloques de Gutenberg, el nuevo editor de WordPress.
+> `brok-guten-blocks` is a development kit created by `mowomo.com` with ❤️ for the development of Gutenberg blocks, the new editor of WordPress.
 
-Brok Guten Blocks nació como solución a no encontrar ningún kit de desarrollo de bloques de Gutenberg capaz de ofrecer potencia y a la vez estabilidad. Una estabilidad que obtiene al ser un proyecto actualizado día a día y que se utiliza constantemente en las oficinas de mowomo para realizar proyectos de gran envergadura.
+Brok Guten Blocks was born as a solution to not find any Gutenberg block development kit capable of offering both power and stability. A stability that obtains when being a project updated day by day and that is used constantly in the offices of mowomo to realize projects of great importance.
 
-Además, está enfocado a ser usado por la comunidad de habla hispana, por lo que todos los comandos y documentación interna estarán en castellano.
+In addition, all commands and internal documentation will be in English.
+`brok-guten-blocks` is, in a nutshell:
+    • Agile
+    • Stable
+    • Actualizado
+    • English
+    • Low dependence
 
-`brok-guten-blocks` es, en resumen:
+## 🚀 Starting
 
-- 🐆 Ágil
+Starting to work with `brok-guten-blocks` is very simple. We'll leave the steps here:
 
-- 🐘 Estable
+1. Clone this repository wherever you want.
 
-- 🐝 Actualizado
+2. Run the npm install command to set up the project for the first time.
 
-- 🐂 Español
+Once this is done, you will be able to use the commands offered by `brok-guten-blocks` to manage your blocks, which we leave explained just below.
 
-- 🦅 Dependencia mínima
+## 👨‍💻 Commands
 
-## 🚀 Empezando
+This package contains some `custom console` created to make it easier to manage both the blocks and the plugin. A list of them is:
 
-Empezar a trabajar con `brok-guten-blocks` es muy sencillo. Te dejamos aquí los pasos:
+- `npm start`
 
-1. Clonar este repositorio donde quieras.
+    • Used to work with the kit itself.
 
-2. Ejecutar el comando `npm install` para configurar el proyecto por primera vez.
+    • Execute it whenever you are developing blocks, as it makes sure that all the code is compiled and corrected.
 
-Una vez hecho esto, podrás usar ya los comandos que te ofrece `brok-guten-blocks` para administrar tus bloques, los cuales te dejamos explicados justo abajo.
+- `npm run crear "nombre-bloque"`
 
-## 👨‍💻 Comandos
+    • Used to generate a new block with the indicated name.
 
-Este paquete contiene algunos `comandos de consola` personalizados creados para facilitar la administración tanto de los bloques como del plugin. Una lista de ellos es:
+    • The created block will be correctly configured inside the plugin environment.
 
-🤙 `npm start`
+- `npm run borrar "nombre-bloque"`
 
-- Usado para trabajar con el kit en sí mismo.
+    • Used to delete a block with the indicated name.
 
-- Ejecútalo siempre que estés desarrollando bloques, ya que se encarga de que todo el código se vaya compilando y corrigiendo.
+    • The deleted block will be properly removed from the plugin environment.
 
-🤙 `npm run crear "nombre-bloque"`
+- `npm run exportar`
 
-- Usado para generar un nuevo bloque con el nombre indicado.
+    • Used to configure a perfectly functional plugin in the folder `exports`.
 
-- El bloque creado estará correctamente configurando dentro del entorno del plugin.
+    • To use it as a plugin you just have to pass it to the plugins folder of the WordPress installation you want and activate it.
 
-🤙 `npm run borrar "nombre-bloque"`
+## 📚 Low dependence
 
-- Usado para borrar un bloque con el nombre indicado.
+This development kit is based on certain dependencies that, if not included, would not work properly. Here's a summary of all of them:
 
-- El bloque borrado será correctamente desconfigurado del entorno del plugin.
+    • **`@babel`** allows us to work comfortably with JSX and that the React compiler doesn't miss anything we program it.
 
-🤙 `npm run exportar`
+    • `@wordpress` allows us to work with the resources that WordPress offers Gutenberg developers.
 
-- Usado para configurar un plugin perfectamente funcional en la carpeta `exports`.
+    • `webpack` helps us to make a simulated react compilation to see the errors we have and then encapsulates all the code so that it is well ordered.
 
-- Para usarlo como plugin solo tendrás que pasarlo a la carpeta plugins de la instalación WordPress que quieras y activarlo.
+    • `classnames`, `css-loader`, `node-sass`, `postcss-loader`, `raw-loader`, `sass-loader`, `autoprefixer` and `style-loader` help webpack understand the code we write so you can work with it and compile it.
+    
+    • `path`, `rimraf` and `ncp` make custom commands even more agile.
 
-## 📚 Dependencias mínimas
+## 💎 Philosophy
 
-Este kit de desarrollo se basa en ciertas dependencias que, de no estar incluidas, no funcionaría correctamente. Te hacemos un resumen de todas ellas:
+- **No configuration required:** When cloning and installing the dependencies you will have no need to configure the project.
 
-- `@babel` nos permite trabajar a gusto con JSX y que el compilador de React no se pierda nada de lo que le programamos.
+- **All facilities:** You will be able to create and delete the blocks with only one command, you will save minutes of development. In addition, you can export all your blocks in a single plugin perfectly optimized and functional.
 
-- `@wordpress` nos permite trabajar con los recursos que WordPress ofrece a los desarrolladores de Gutenberg.
+- **Highest performance** Each line of code of the blocks will be compiled and minimized so that WordPress consumes the minimum resources with your plugin.
 
-- `webpack` nos ayuda a hacer una compilación simulada de react para ver los errores que tenemos y luego nos encapsula todo el código para que esté bien ordenado.
+- **You're not alone:** Any problem you encounter can be reported in the repository and we'll help you solve it without problems.
 
-- `classnames`, `css-loader`, `node-sass`, `postcss-loader`, `raw-loader`, `sass-loader`, `autoprefixer` y `style-loader` ayudan a webpack a entender el código que escribimos para que pueda trabajar con él y así poder compilarlo.
+## 👍 Why `brok-guten-block`?
 
-- `path`, `rimraf` y `ncp` ayudan a que los comandos personalizados sean aún más ágiles.
+Very simple, because we help you save time:
 
-## 💎 Filosofía
+- **Block handling commands:** You will save time by creating, deleting and exporting blocks with the commands we leave you ready to use.
 
-- **Ninguna configuración necesaria:** Al momento de clonar e instalar las dependencias no tendrás ninguna necesidad de configurar el proyecto.
+- **Development Components Library:** You'll save time by using our component library created specifically to streamline block programming, based on the official WordPress libraries.
 
-- **Todo facilidades:** Podrás crear y borrar los bloques con solos un comando, ahorrándote minutes de desarrollo. Además, podrás exportar todos tus bloques en un único plugin perfectamente optimizado y funcional.
+- **carefree** You'll save time checking for dependency updates, we'll do it for you.
 
-- **Máxima optimización:** Cada línea de código de los bloques será compilada y minimizada para que WordPress consuma los mínimos recursos con tu plugin.
+## ⚜️ All for one, one for all
 
-- **No estás solo:** Cualquier problema que te surja podrás comunicarlo en el repositorio y te ayudaremos a solucionarlo sin problemas.
+This is a project made by and for the community, a project of all. Although the`mowomo.com` team performs the bulk of the maintenance and updates, any member of the community can `folk`the project and improve any section of the repository.
 
-## 👍 ¿Por qué `brok-guten-block`?
-
-Muy sencillo, porque te hacemos ganar tiempo:
-
-- **Comandos de manejo de bloques:** Te ahorrarás tiempo creando, borrando y exportando bloques con los comandos que te dejamos listos para usar.
-
-- **Librería de componentes de desarrollo:** Te ahorrarás tiempo usando nuestra librería de componentes creada específicamente para agilizar la programación de los bloques, basada en las librerías oficiales de WordPress.
-
-- **Cero preocupaciones:** Te ahorrarás tiempo revisando las actualizaciones de las dependencias, nosotros ya lo haremos por ti.
-
-## ⚜️ Todos para uno, uno para todos
-
-Este es un proyecto hecho por y para la comunidad, un proyecto de todos. Aunque el equipo de `mowomo.com` realice el grueso del mantenimiento y de las actualizaciones, cualquier integrante de la comunidad puede hacerle un `folk` al proyecto y mejorar cualquier apartado del repositorio.
-
-Cada vez que veamos un `pull request` lo estudiaremos y si aporta alguna mejora al repositorio no tendremos ningún problema en añadirlo y actualizar la lista de contribuidores. Conviértete en un `gbg-contributor`.
+Every time we see a `pull request` , we will study it and if it contributes some improvement to the repository we will not have any problem in adding it and updating the list of contributors. Become a `gbg-contributor`.
