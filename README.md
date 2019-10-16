@@ -61,15 +61,15 @@ This package contains some `custom console` created to make it easier to manage 
 
 This development kit is based on certain dependencies that, if not included, would not work properly. Here's a summary of all of them:
 
-    • `@babel` allows us to work comfortably with JSX and that the React compiler doesn't miss anything we program it.
+- `@babel` allows us to work comfortably with JSX and that the React compiler doesn't miss anything we program it.
 
-    • `@wordpress` allows us to work with the resources that WordPress offers Gutenberg developers.
+- `@wordpress` allows us to work with the resources that WordPress offers Gutenberg developers.
 
-    • `webpack` helps us to make a simulated react compilation to see the errors we have and then encapsulates all the code so that it is well ordered.
+- `webpack` helps us to make a simulated react compilation to see the errors we have and then encapsulates all the code so that it is well ordered.
 
-    • `classnames`, `css-loader`, `node-sass`, `postcss-loader`, `raw-loader`, `sass-loader`, `autoprefixer` and `style-loader` help webpack understand the code we write so you can work with it and compile it.
+- `classnames`, `css-loader`, `node-sass`, `postcss-loader`, `raw-loader`, `sass-loader`, `autoprefixer` and `style-loader` help webpack understand the code we write so you can work with it and compile it.
     
-    • `path`, `rimraf` and `ncp` make custom commands even more agile.
+- `path`, `rimraf` and `ncp` make custom commands even more agile.
 
 ## 💎 Philosophy
 
