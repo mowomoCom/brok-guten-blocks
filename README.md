@@ -61,7 +61,7 @@ This package contains some `custom console` created to make it easier to manage 
 
 This development kit is based on certain dependencies that, if not included, would not work properly. Here's a summary of all of them:
 
-    • **`@babel`** allows us to work comfortably with JSX and that the React compiler doesn't miss anything we program it.
+    • `@babel` allows us to work comfortably with JSX and that the React compiler doesn't miss anything we program it.
 
     • `@wordpress` allows us to work with the resources that WordPress offers Gutenberg developers.
 
