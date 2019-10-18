@@ -9,13 +9,13 @@
 
 > `brok-guten-blocks` is a development kit created by `mowomo.com` with ❤️ for the development of Gutenberg blocks, the new editor of WordPress.
 
-Brok Guten Blocks was born as a solution to not find any Gutenberg block development kit capable of offering both power and stability. A stability that obtains when being a project updated day by day and that is used constantly in the offices of mowomo to realize projects of great importance.
+Brok Guten Blocks was born as a solution to satisfy the demand for a Gutenberg block development kit capable of offering power and stability. A stability that obtains when being a project updated day by day and that is used constantly in the offices of mowomo to realize projects of great importance.
 
 In addition, all commands and internal documentation will be in English.
 `brok-guten-blocks` is, in a nutshell:
     • Agile
     • Stable
-    • Actualizado
+    • Update
     • English
     • Low dependence
 
