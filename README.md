@@ -15,13 +15,9 @@ In addition, all commands and internal documentation will be in English.
 `brok-guten-blocks` is, in a nutshell:
 
     • Agile
-
     • Stable
-
     • Update
-
     • English
-
     • Low dependence
 
 ## 🚀 Starting
